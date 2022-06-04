@@ -1,0 +1,94 @@
+/* reset css */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color:#333;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+    background: #f9f9f9;
+}
+h1{
+    padding-bottom: 10px;
+}
+input{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+textarea{
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+::placeholder{
+    color:#bbb;
+}
+
+/* style css */
+.discussion__container{
+    display: flex;
+    justify-content: space-between;
+    width: 540px;
+    height: 80px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+.discussion__avatar--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discussion__avatar--image{
+    height: 48px;
+    border-radius: 50%;
+}
+.discussion__content{
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow:hidden; 
+}
+.discussion__title{
+    font-size: 16px;
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    white-space:nowrap;
+}
+.discussion__information{
+    color:#777;
+    font-size: 14px;
+    text-align: right;
+    padding-top: 10px;
+}
+.discussion__answered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+.form__submit input{
+   background: #f8f8f8;
+   height: 40px;
+   font-size: 15px;
+   cursor: pointer;
+}
+.form__submit input:hover{
+    background: #333;
+    color:#fff;
+    transition: .3s;
+}
